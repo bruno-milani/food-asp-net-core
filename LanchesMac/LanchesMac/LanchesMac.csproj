@@ -4,4 +4,27 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Migrations\20200920180946_MigracaoInicial.cs" />
+    <Compile Remove="Migrations\20200920180946_MigracaoInicial.Designer.cs" />
+    <Compile Remove="Migrations\20200920182212_PopularTabelas.cs" />
+    <Compile Remove="Migrations\20200920182212_PopularTabelas.Designer.cs" />
+    <Compile Remove="Migrations\20200920183417_PopularTabelas.cs" />
+    <Compile Remove="Migrations\20200920183417_PopularTabelas.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
 </Project>
